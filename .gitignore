@@ -1,0 +1,3 @@
+node_modules/
+public/hydro-pdf-viewer/pdfjs/
+*.log

@@ -1,0 +1,35 @@
+{
+  "name": "hydro-pdf-viewer",
+  "version": "0.1.4",
+  "description": "Render Hydro problem attachments as inline PDF.js viewers.",
+  "main": "index.ts",
+  "files": [
+    "index.ts",
+    "public",
+    "scripts",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/copy-pdfjs.js",
+    "copy-pdfjs": "node scripts/copy-pdfjs.js",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pdfjs-dist": "4.10.38"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "hydrooj": ">=5.0.1 <6"
+  },
+  "peerDependenciesMeta": {
+    "hydrooj": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
